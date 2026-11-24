@@ -1,16 +1,21 @@
-"""make.fun entry: a one-sentence pitch for first-time builders.
+"""make.fun entry: one sentence aimed at a friend who has never coded.
 
-The whole entry is the sentence below. The grader runs this program and reads
-/output/entry.txt, so the only job here is to write that sentence to disk as
-UTF-8 text (no trailing newline, well under the 240 character gate).
+The whole entry is PITCH below. The grader runs this program and reads
+/output/entry.txt, so this file's only job is to write that sentence as UTF-8
+text with no trailing newline, safely inside the 240-character gate.
+
+The pitch is written for the judge's first criterion: make the case in one
+read. It names the friend's exact problem (an idea, no way to build it), gives
+the easy action (one sentence on make.fun), and closes with plain, low-risk
+reasons to say yes (no coding, no cost, a prize if it wins).
 """
 
 from pathlib import Path
 
 PITCH = (
-    "That app idea you've never known how to build? Describe it in one sentence "
-    "on make.fun and an AI agent builds it for you—no code to write, free to "
-    "enter, and a real shot at prize money."
+    "You've got an app idea stuck in your head and no clue how to build it? On "
+    "make.fun, just describe it in one sentence and an AI agent builds your first "
+    "app for you—no coding, no cost, and even a cash prize if it wins."
 )
 
 OUTPUT_PATH = Path("/output/entry.txt")
